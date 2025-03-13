@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Calculadora
+class Program
 {
     static void Main(string[] args)
     {
@@ -8,16 +8,16 @@ class Calculadora
         string operacao;
 
         Console.WriteLine("Calculadora - Operações Básicas");
-        
+
         Console.Write("Digite o primeiro número: ");
         num1 = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("Digite a operação (+, -, *, /): ");
         operacao = Console.ReadLine();
-    
+
         Console.Write("Digite o segundo número: ");
         num2 = Convert.ToDouble(Console.ReadLine());
-        
+
         switch (operacao)
         {
             case "+":
@@ -51,7 +51,7 @@ class Calculadora
                 Console.WriteLine("Operação inválida! Tente novamente com +, -, * ou /.");
                 break;
         }
-       
+
         Console.WriteLine("Pressione qualquer tecla para sair...");
         Console.ReadKey();
     }
